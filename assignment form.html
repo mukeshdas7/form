@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form example</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        div{
+            margin-bottom: 10px;
+        }
+
+        .textbox{
+            border: 1px solid yellow;
+            padding: 10px;
+            width: 150px;
+            margin-left: 20px;
+            
+        
+        }
+
+        .textbox:focus{
+            border: 2px solid darkblue;
+            outline: none;
+        }
+.amrit{
+    /* margin-left: 250px; */
+    margin: auto;
+    width: 50%;
+    padding: 12px;
+    background-color:bisque;
+    border: 2px solid white;
+    /* border-color: white; */
+    /* border-width: 2px; */
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    padding: 12px;
+}
+
+
+    </style>
+ <div class="amrit">
+     <h1>REGISTRATION FORM</h1>
+
+     
+     <form active="insert.php" method="get">
+         <div>
+        <label for="first name" >FIRST NAME</label>
+        <input type="name" name="first name" id="first name" placeholder="FIRST NAME" class="textbox">
+        </div>
+        
+        <div>
+            <label for="middle name" >MIDDLE NAME</label>
+            <input type="name" name="middle name" id="middle name" placeholder="MIDDLE NAME" class="textbox">
+        </div>
+        
+        
+            <div>
+                <label for="last name" >LAST NAME</label>
+                <input type="name" name="last name" id="last name" placeholder="LAST NAME" class="textbox">
+                </div>
+
+                <div>
+                    <label for="e-mail" >E-MAIL ID</label>
+                    <input type="name" name="email id " id="e-mail" placeholder="EMAIL ID" class="textbox">
+                    </div>
+
+                    <div>
+                        <label for="password" >PASSWORD</label>
+                        <input type="password" name="password" id="password" placeholder="PASSWORD" class="textbox">
+                    </div>
+
+                        <div>
+                            <label for="phone number" >PHONE NUMBER</label>
+                            <input type="number" name="phone number" id="phone number" placeholder="PHONE NUMBER" class="textbox">
+                            </div>
+
+                            <div>
+                                <label for="gender" >GENDER</label>
+                                <label for="male" style="width: 50px;">MALE</label>
+                                <input type="radio" name="male" id="male">
+                                <label for="female" style="width: 70px;">FEMALE</label>
+                                <input type="radio" name="male" id="female">
+                                </div>
+                                 
+                                
+                    <label for="checkbox"> CHECKBOX</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <div>
+
+                    <label for="country">COUNTRY</label>
+                    <select name="country" id="country"class="textbox">
+                        <optgroup label="ASIA COUNTRY"><option value="india">NEPAL</option>
+                            <option value="nepal">INDIA</option>  
+                            <option value="china">CHINA</option> </optgroup>
+
+                            <OPtgroup label="EUROPIAN COUNTRY"> <option value="canada">CANADA</option>
+                                <option value="russia">RUSSIA</option>
+                                <option value="america">AMERICA</option>
+                                <option value="germany">GERMANY</option>
+                                <option value="denmark">DENMARK</option>
+                                <option value="france">FRANCE</option></OPtgroup>
+
+                            <OPtgroup label="ARABIC COUNTRY"> <option value="kazakistan">KAZAKISTAN</option>
+                                <option value="sudan">SUDAN</option>
+                        <option value="dubai">DUBAI</option></OPtgroup>
+
+                    </select>
+                </div>
+                
+                
+                <div>
+                    <label for="yourself">WRITE ABOUT YOURSELF</label>
+                    <textarea name="about" id="yourself" cols="30" rows="10"></textarea>
+                </div>
+                
+                
+                <input type="submit" value="SUBMIT">
+                
+                
+                
+                <input type="reset" value="RESET">
+                
+                <a href="https://google.com">view more</a>
+                
+            </form>
+        </div>
+</body>
+</html>
